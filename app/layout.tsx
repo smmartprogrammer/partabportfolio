@@ -14,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div>
-          <div className="w-[80%]"> {children}</div>
-          <div className="w-[20%] ">
+        <div className="flex flex-col justify-between items-center h-screen">
+          <div className=""> {children}</div>
+          <div className="flex w-full justify-center  ">
             <Navbar />
           </div>
         </div>

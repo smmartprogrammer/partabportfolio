@@ -11,8 +11,8 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="border-2 border-black flex justify-center items-center ">
-      <ul className="flex space-x-4 ">
+    <div className="border-4 bg-gray-600 text-white border-gray-600 rounded-lg w-[25%] hover:w-[50%] duration-300 transition ease-in-out  delay-50   ">
+      <ul className="flex space-x-4 justify-evenly ">
         <Link href="/" className="flex flex-col items-center">
           <HomeIcon className="h-14 w-10 " />
           <li>Home</li>
