@@ -11,8 +11,8 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="border-4 bg-[#252734] text-white border-[#797B87] animate-pulse   rounded-lg w-[25%] ">
-      <ul className="flex space-x-4 justify-evenly ">
+    <div className="border-4 bg-[#252734] text-white border-[#797B87] animate-pulse rounded-lg w-[100%] md:w-[35%] m-3 border-none ">
+      <ul className="flex space-x-4 justify-evenly text-center   ">
         <Link href="/" className="flex flex-col items-center">
           <HomeIcon className="h-14 w-10   hover:animate-spin " />
           <li className="animate-bounce">Home</li>
