@@ -5,10 +5,10 @@ import { SocialIcon } from "react-social-icons";
 export default function Home() {
   return (
     <main className="bg-[#2A2C39] w-screen">
-      <div className="flex justify-center items-center flex-wrap-reverse">
-        <div className="md:w-[50%] flex mt-12">
-          <div className=" flex justify-center animate-pulse  ">
-            <div className=" flex flex-col items-center justify-center space-y-1 mx-6  ">
+      <div className="flex justify-center items-center flex-wrap-reverse  ">
+        <div className="md:w-[50%] flex md:mt-12 sm:align-top "> 
+          <div className=" animate-pulse  ">
+            <div className=" flex flex-col   space-y-1 mx-6   ">
               <SocialIcon
                 url="https://twitter.com/partabRparmar"
                 bgColor="transparent"
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-[50%] flex justify-center items-center   ">
-          <div className="  flex justify-center items-center mt-6">
+          <div className="  flex justify-center items-center mt-6 sm:rounded-full ">
             <Image
               src="/partabaibackk.png"
               alt=""
