@@ -7,11 +7,10 @@ import {
   CodeIcon,
   PhoneIncomingIcon,
 } from '@heroicons/react/outline';
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
-    <div className="border-4 bg-[#252734] text-white border-[#797B87] animate-pulse   rounded-lg w-[25%] ">
+    <div className="border-4 bg-[#252734] text-white border-[#797B87] animate-pulse w-full rounded-lg md:w-[25%] ">
       <ul className="flex space-x-4 justify-evenly ">
         <Link href="/" className="flex flex-col items-center">
           <HomeIcon className="h-14 w-10   hover:animate-spin " />

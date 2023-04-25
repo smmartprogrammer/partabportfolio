@@ -1,41 +1,20 @@
 import Image from "next/image";
 import { ChatAltIcon } from "@heroicons/react/outline";
 import { SocialIcon } from "react-social-icons";
+import Sidebar from "@/component/Sidebar";
 
 export default function Home() {
   return (
-    <main className="bg-[#2A2C39] w-screen">
+    <main className="bg-[#2A2C39] w-screen  ">
       <div className="flex justify-center items-center flex-wrap-reverse  ">
-        <div className="md:w-[50%] flex md:mt-12 sm:align-top "> 
-          <div className=" animate-pulse  ">
-            <div className=" flex flex-col   space-y-1 mx-6   ">
-              <SocialIcon
-                url="https://twitter.com/partabRparmar"
-                bgColor="transparent"
-                fgColor="white"
-                className="hover:text-red-400"
-              />
-              <SocialIcon
-                url="https://linkedin.com/in/jaketrent"
-                bgColor="transparent"
-                fgColor="white"
-              />
-              <SocialIcon
-                url="https://whatsapp.com/jaketrent"
-                bgColor="transparent"
-                fgColor="white"
-              />
-              <SocialIcon
-                url="https://gmail.com/jaketrent"
-                bgColor="transparent"
-                fgColor="white"
-              />
-            </div>
+        <div className="md:w-[50%] flex md:mt-12 sm:align-top ">
+          <div className="hidden md:block">
+            <Sidebar />
           </div>
-          <div>
-            <div className="md:text-4xl font-extrabold  ">
-              <p>
-                Hi, I'm <span className="text-red-400">Partab!</span>
+          <div className="flex flex-col items-center md:items-start mt-5 md:mt-0 ">
+            <div className="text-2xl md:text-4xl font-extrabold text-center md:text-left ">
+              <p className="text-4xl mb-2 md:mb-0">
+                Hi, I am <span className="text-red-400">Partab!</span>
               </p>
               <p className="font-light">
                 I am developer, loves to solve problems
@@ -44,21 +23,32 @@ export default function Home() {
             <button
               className=" mt-5 flex items-center space-x-2
              border-4 bg-[#252734] text-white border-[#797B87]
-              animate-pulse hover:bg-red-400 md:px-4 rounded-md  "
+              animate-pulse hover:bg-red-400 w-[45%] md:w-[32%] px-2 md:px-4 rounded-md  "
             >
-              <ChatAltIcon className="md:h-14 md:w-10 hover:animate-spin " />
-              <span className="md:animate-bounce"> Connect Me.. </span>
+              <ChatAltIcon className="h-10 w-8 md:h-14 md:w-10 hover:animate-spin " />
+              <span className="md:animate-bounce"> Connect Me... </span>
             </button>
           </div>
         </div>
-        <div className="md:w-[50%] flex justify-center items-center   ">
-          <div className="  flex justify-center items-center mt-6 sm:rounded-full ">
+        <div className="md:w-[50%] flex justify-center items-center ">
+          <div className="block md:hidden  ">
+            <Sidebar />
+          </div>
+          <div className=" flex justify-center items-center mt-6  ">
             <Image
+            layout="responsive"
               src="/partabaibackk.png"
               alt=""
-              width={220}
-              height={220}
-              className="object-fit "
+              width={640}
+              height={747}
+              // width={180}
+              // height={200}
+              // sizes="
+              // (max-width: 320px) 20vw,
+              // (max-width: 481px) 50vw,
+              // (max-width: 768px) 100vw,
+              // (max-width: 1200px) 50vw,
+              // 33vw"
             />
           </div>
         </div>
