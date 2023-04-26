@@ -1,10 +1,111 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 type Props = {};
 
 const Projects = (props: Props) => {
-  return <div>Projects</div>;
+  return (
+    <div className="antialiased bg-gray-100 text-gray-800   ">
+      <div className="relative container mx-auto px-6 flex flex-col space-y-8">
+        <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx:auto md:right-0 md:left-0 "></div>
+
+        <div className="relative z-10">
+          <img
+            src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png"
+            height={100}
+            className="timeline-img "
+          />
+          <div className="timeline-container">
+            <div className="timeline-pointer" aria-hidden="true"></div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <span className="font-bold text-indigo-600 text-sm tracking-wide  ">
+                jan 2020
+              </span>
+              <h1 className="text-2xl font-bold pt-1">An amazing travel</h1>
+              <p className="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perspiciatis asperiores quis saepe voluptatem consectetur
+                accusantium ipsa dolores optio dicta? In mollitia recusandae
+                ullam natus, odio corporis sapiente molestias cumque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="relative z-10">
+          <img
+            src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png"
+            height={100}
+            className="timeline-img "
+          />
+          <div className="timeline-container timeline-container-left">
+            <div
+              className="timeline-pointer timeline-pointer-left"
+              aria-hidden="true"
+            ></div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <span className="font-bold text-indigo-600 text-sm tracking-wide  ">
+                jan 2020
+              </span>
+              <h1 className="text-2xl font-bold pt-1">An amazing travel</h1>
+              <p className="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perspiciatis asperiores quis saepe voluptatem consectetur
+                accusantium ipsa dolores optio dicta? In mollitia recusandae
+                ullam natus, odio corporis sapiente molestias cumque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="relative z-10">
+          <img
+            src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png"
+            height={100}
+            className="timeline-img "
+          />
+          <div className="timeline-container">
+            <div className="timeline-pointer" aria-hidden="true"></div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <span className="font-bold text-indigo-600 text-sm tracking-wide  ">
+                jan 2020
+              </span>
+              <h1 className="text-2xl font-bold pt-1">An amazing travel</h1>
+              <p className="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perspiciatis asperiores quis saepe voluptatem consectetur
+                accusantium ipsa dolores optio dicta? In mollitia recusandae
+                ullam natus, odio corporis sapiente molestias cumque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="relative z-10">
+          <img
+            src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png"
+            height={100}
+            className="timeline-img "
+          />
+          <div className="timeline-container timeline-container-left">
+            <div
+              className="timeline-pointer timeline-pointer-left"
+              aria-hidden="true"
+            ></div>
+            <div className="bg-white p-6 rounded-md shadow-md">
+              <span className="font-bold text-indigo-600 text-sm tracking-wide  ">
+                jan 2020
+              </span>
+              <h1 className="text-2xl font-bold pt-1">An amazing travel</h1>
+              <p className="pt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                perspiciatis asperiores quis saepe voluptatem consectetur
+                accusantium ipsa dolores optio dicta? In mollitia recusandae
+                ullam natus, odio corporis sapiente molestias cumque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Projects;
