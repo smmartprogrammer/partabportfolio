@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="antialiased bg-[#2A2C39] ">
       <div className="flex w-full min-h-screen justify-center items-center">
-        <div className="flex flex-col md:flex-row md-space-x-6  space-y-6 bg-[#252734] w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white ">
+        <div className="flex flex-col md:flex-row md-space-x-6  space-y-6 bg-[#252734] w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-xl text-white ">
           <div className="flex flex-col space-y-8 justify-between">
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
@@ -67,7 +67,7 @@ const Contact = () => {
               className="flex flex-col space-y-4"
             >
               <div>
-                <label for="" className="text-sm">
+                <label for="" className="text-sm font-bold">
                   Your Name
                 </label>
                 <input
@@ -77,7 +77,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label for="" className="text-sm">
+                <label for="" className="text-sm font-bold">
                   Your Email Address
                 </label>
                 <input
@@ -87,7 +87,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label for="" className="text-sm">
+                <label for="" className="text-sm font-bold">
                   Message
                 </label>
                 <textarea
