@@ -3,8 +3,8 @@ import { SocialIcon } from "react-social-icons";
 
 function Sidebar() {
   return (
-        <div className="animate-pulse ">
-            <div className=" flex flex-col space-y-1 mx-6  ">
+        <div className="animate-pulse">
+            <div className=" flex flex-col space-y-1  ">
               <SocialIcon
                 url="https://twitter.com/partabRparmar"
                 bgColor="transparent"
