@@ -1,12 +1,22 @@
+"use client"
 import Link from "next/link";
 import React from "react";
-
+import { motion } from "framer-motion";
 type Props = {};
 
 const Projects = (props: Props) => {
   return (
     <div className="antialiased  text-gray-800">
       <div className="relative container mx-auto px-6 flex flex-col space-y-8">
+      <motion.h1
+          className="text-3xl font-extrabold text-white sm:text-4xl"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          Projects
+        </motion.h1>
+
             <div
                 className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"
             ></div>

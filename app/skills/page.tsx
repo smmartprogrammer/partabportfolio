@@ -39,7 +39,7 @@ const Skills = (props: Props) => {
         >
           Skills
         </motion.h1>
-        <div className="mt-12">
+        <div className="mt-12 flex justify-center items-center flex-wrap space-x-11">
           {skills.map((skill) => (
             <div key={skill.name} className="mb-8">
               <h2 className="text-lg font-medium text-white">{skill.name}</h2>
