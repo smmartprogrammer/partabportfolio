@@ -1,48 +1,49 @@
 import { SocialIcon } from "react-social-icons";
-
+import { Camera, CameraOff, Mail, Map, MapPin, MessageCircle, MessageSquare } from 'react-feather';
 import React from "react";
+import { LocationMarkerIcon } from "@heroicons/react/outline";
 
 const Contact = () => {
   return (
     <div className="antialiased bg-[#2A2C39] ">
       <div className="flex w-full min-h-screen justify-center items-center">
-        <div className="flex flex-col md:flex-row md-space-x-6  space-y-6 bg-[#252734] w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-xl text-white ">
+        <div className="flex flex-col md:flex-row md-space-x-6  space-y-6 bg-[#252734] w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-white text-white ">
           <div className="flex flex-col space-y-8 justify-between">
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
               <p className="pt-2 text-cyan-100 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-                totam cum, neque enim autem soluta necessitatibus aspernatur.
+                Let's work together! Contact me today to discuss your project. <br />
+                "I pride myself on delivering high-quality work and exceptional service - let me prove it to you."
               </p>
             </div>
             <div className="flex flex-col space-y-6">
               <div className="inline-flex space-x-2 items-center">
-                <SocialIcon
+                {/* <SocialIcon
                   url="https://whatsapp.com/jaketrent"
                   bgColor="transparent"
                   fgColor="white"
                   className="text-teal-300 text-xl"
-                />
+                /> */}
+                <MessageSquare/>
                 <span>+92 304 788 7003</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <SocialIcon
+              
+                {/* <SocialIcon
                   url="https://gmail.com/jaketrent"
                   bgColor="transparent"
                   fgColor="white"
-                />
+                /> */}
+                <Mail /> 
                 <span>partabrajp@gmail.com</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <SocialIcon
-                  url="https://gmail.com/jaketrent"
-                  bgColor="transparent"
-                  fgColor="white"
-                />
+                <MapPin />
                 <span>Garden West, Karachi, Pakistan</span>
               </div>
             </div>
             <div className="flex space-x-4 text-lg">
+
               <SocialIcon
                 url="https://twitter.com/partabRparmar"
                 bgColor="transparent"
@@ -59,6 +60,7 @@ const Contact = () => {
                 bgColor="transparent"
                 fgColor="white"
               />
+
             </div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80 ">
