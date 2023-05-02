@@ -1,9 +1,25 @@
 import { SocialIcon } from "react-social-icons";
-import { Camera, CameraOff, Mail, Map, MapPin, MessageCircle, MessageSquare } from 'react-feather';
+import { Mail, MapPin, MessageSquare } from "react-feather";
 import React from "react";
-import { LocationMarkerIcon } from "@heroicons/react/outline";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
+  const message = encodeURIComponent(
+    "Hello! I came across your portfolio website and would like to discuss a project. Are you available to chat?"
+  );
+  const phone = "00923047887003"; // Replace with your WhatsApp phone number
+  const address = encodeURIComponent("Garden West, Karachi, Pakistan"); // Replace with your address
+  const zoomLevel = 15;
+  const recipient = "partabrajp@gmail.com"; // Replace with your email address
+  const subject = encodeURIComponent("I visited your website"); // Replace with your desired subject line
+  const body = encodeURIComponent(
+    "Hello, I came across your portfolio website and would like to discuss a project. Are you available to chat?"
+  ); // Replace with your desired email body
+  const href = `mailto:${recipient}?subject=${subject}&body=${body}`;              
+
   return (
     <div className="antialiased bg-[#2A2C39] ">
       <div className="flex w-full min-h-screen justify-center items-center">
@@ -12,38 +28,51 @@ const Contact = () => {
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
               <p className="pt-2 text-cyan-100 text-sm">
-                Let's work together! Contact me today to discuss your project. <br />
-                "I pride myself on delivering high-quality work and exceptional service - let me prove it to you."
+                Let's work together! Contact me today to discuss your project.{" "}
+                <br />
+                "I pride myself on delivering high-quality work and exceptional
+                service - let me prove it to you."
               </p>
             </div>
             <div className="flex flex-col space-y-6">
               <div className="inline-flex space-x-2 items-center">
-                {/* <SocialIcon
-                  url="https://whatsapp.com/jaketrent"
-                  bgColor="transparent"
-                  fgColor="white"
-                  className="text-teal-300 text-xl"
-                /> */}
-                <MessageSquare/>
-                <span>+92 304 788 7003</span>
+                <Link href={`https://wa.me/${phone}?text=${message}`}>
+                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
+                    <FaWhatsapp size={18} />
+                    <span>Whatsapp Me..</span>
+                  </div>
+                </Link>
               </div>
               <div className="inline-flex space-x-2 items-center">
-              
-                {/* <SocialIcon
-                  url="https://gmail.com/jaketrent"
-                  bgColor="transparent"
-                  fgColor="white"
-                /> */}
-                <Mail /> 
-                <span>partabrajp@gmail.com</span>
+                <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
+                  {" "}
+                <Mail size={18} /> 
+                  <span action="mailto:partabrajp@gmail.com">partabrajp@gmail.com</span>
+                  <div
+                    href={`${href}`}
+                    // className="flex items-center space-x-2 py-2 px-4 rounded-md bg-red-500 text-white hover:bg-red-600"
+                  >
+                   
+                   
+                  </div>
+                </div>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <MapPin />
-                <span>Garden West, Karachi, Pakistan</span>
+                {/* <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500  text-white hover:bg-green-600">
+                  <MapPin size={18}/>
+                  <span>Garden West, Karachi, Pakistan</span>
+                </div> */}
+                <Link
+                  href={`https://www.google.com/maps/search/?api=1&query=${address}&zoom=${zoomLevel}`}
+                >
+                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
+                    <FaMapMarkerAlt size={18} />
+                    <span>View on map</span>
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="flex space-x-4 text-lg">
-
               <SocialIcon
                 url="https://twitter.com/partabRparmar"
                 bgColor="transparent"
@@ -60,7 +89,6 @@ const Contact = () => {
                 bgColor="transparent"
                 fgColor="white"
               />
-
             </div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80 ">
