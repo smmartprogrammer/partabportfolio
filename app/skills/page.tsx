@@ -13,6 +13,10 @@ const skills = [
   { name: "Next.js", level: 85 },
   { name: "Tailwind CSS", level: 90 },
   { name: "Git", level: 80 },
+  { name: "firebase", level: 70 },
+  { name: "Chakra ui", level: 70 },
+  { name: "MS Excel", level: 95 },
+  { name: "Metamask", level: 80 },
 ];
 
 type Props = {};
@@ -20,7 +24,7 @@ type Props = {};
 
 const Skills = (props: Props) => {
     return (
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="w-screen h-full flex flex-col justify-around items-center ">
         <motion.h1
           className="text-3xl font-extrabold text-white sm:text-4xl"
           initial={{ opacity: 0, y: -50 }}
@@ -29,7 +33,7 @@ const Skills = (props: Props) => {
         >
           Skills
         </motion.h1>
-        <div className="mt-12 flex justify-center items-center flex-wrap space-x-11">
+        <div className="w-[50%] flex justify-center flex-wrap space-x-10 ">
           {skills.map((skill) => (
             <div key={skill.name} className="mb-8">
               <h2 className="text-lg font-medium text-white">{skill.name}</h2>
