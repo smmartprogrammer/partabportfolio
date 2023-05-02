@@ -45,9 +45,8 @@ const Contact = () => {
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow">
-                  {" "}
-                  <Mail size={18} className="hover:animate-spin" />
-                  <span action="mailto:partabrajp@gmail.com">
+                  <Mail action="mailto:partabrajp@gmail.com" method="post" size={18} className="hover:animate-spin" />
+                  <span >
                     partabrajp@gmail.com
                   </span>
                   <div
