@@ -21,22 +21,12 @@ export default function Home() {
                 I am developer, loves to solve problems
               </p>
               <Link href="/contact">
-                <button className="mt-5 flex items-center space-x-2 inline-block self-end  bg-white hover:bg-[#2A2C39] hover:text-white text-gray-800  py-2 px-6 border border-gray-400 rounded-lg shadow font-bold text-sm">
+                <button className="mt-5 flex items-center space-x-2 py-2  px-4 self-end  bg-white hover:bg-[#2A2C39] hover:text-white text-gray-800   border border-gray-400 rounded-lg shadow font-bold text-sm">
                   <ChatAltIcon className="h-10 w-8 md:h-14 md:w-10 hover:animate-spin " />
                   <p>Connect Me..</p>
-                  
                 </button>
               </Link>
             </div>
-
-            {/* <button
-              className=" mt-5 flex items-center space-x-2 
-             border-4 bg-[#252734] text-white border-[#797B87]
-              animate-pulse hover:bg-red-400 w-[45%] md:w-[32%] px-2 md:px-4 rounded-md  "
-            >
-              <ChatAltIcon className="h-10 w-8 md:h-14 md:w-10  hover:animate-spin " />
-              <span className="md:animate-bounce  "> Connect Me... </span>
-            </button> */}
           </div>
         </div>
         <div className="md:w-[50%] flex justify-center items-center ">
@@ -50,14 +40,6 @@ export default function Home() {
               alt=""
               width={640}
               height={747}
-              // width={180}
-              // height={200}
-              // sizes="
-              // (max-width: 320px) 20vw,
-              // (max-width: 481px) 50vw,
-              // (max-width: 768px) 100vw,
-              // (max-width: 1200px) 50vw,
-              // 33vw"
             />
           </div>
         </div>

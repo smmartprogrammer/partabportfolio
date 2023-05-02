@@ -18,7 +18,7 @@ const Contact = () => {
   const body = encodeURIComponent(
     "Hello, I came across your portfolio website and would like to discuss a project. Are you available to chat?"
   ); // Replace with your desired email body
-  const href = `mailto:${recipient}?subject=${subject}&body=${body}`;              
+  const href = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
   return (
     <div className="antialiased bg-[#2A2C39] ">
@@ -37,24 +37,23 @@ const Contact = () => {
             <div className="flex flex-col space-y-6">
               <div className="inline-flex space-x-2 items-center">
                 <Link href={`https://wa.me/${phone}?text=${message}`}>
-                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
-                    <FaWhatsapp size={18} />
+                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow  ">
+                    <FaWhatsapp size={18} className="hover:animate-spin" />
                     <span>Whatsapp Me..</span>
                   </div>
                 </Link>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
+                <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow">
                   {" "}
-                <Mail size={18} /> 
-                  <span action="mailto:partabrajp@gmail.com">partabrajp@gmail.com</span>
+                  <Mail size={18} className="hover:animate-spin" />
+                  <span action="mailto:partabrajp@gmail.com">
+                    partabrajp@gmail.com
+                  </span>
                   <div
                     href={`${href}`}
                     // className="flex items-center space-x-2 py-2 px-4 rounded-md bg-red-500 text-white hover:bg-red-600"
-                  >
-                   
-                   
-                  </div>
+                  ></div>
                 </div>
               </div>
               <div className="inline-flex space-x-2 items-center">
@@ -65,8 +64,8 @@ const Contact = () => {
                 <Link
                   href={`https://www.google.com/maps/search/?api=1&query=${address}&zoom=${zoomLevel}`}
                 >
-                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500 text-white hover:bg-green-600">
-                    <FaMapMarkerAlt size={18} />
+                  <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow">
+                    <FaMapMarkerAlt size={18} className="hover:animate-spin" />
                     <span>View on map</span>
                   </div>
                 </Link>
@@ -77,18 +76,24 @@ const Contact = () => {
                 url="https://twitter.com/partabRparmar"
                 bgColor="transparent"
                 fgColor="white"
-                className="hover:text-red-400"
+                className="hover:text-red-400 animate-bounce"
               />
               <SocialIcon
-                url="https://linkedin.com/in/jaketrent"
+                url="https://www.linkedin.com/in/partab-r-parmar-64930832/"
                 bgColor="transparent"
                 fgColor="white"
+                className="hover:text-red-400 animate-bounce"
               />
-              <SocialIcon
-                url="https://whatsapp.com/jaketrent"
-                bgColor="transparent"
-                fgColor="white"
-              />
+              <Link href={`https://wa.me/${phone}?text=${message}`}>
+                <div>
+                  <SocialIcon
+                    url="https://whatsapp.com"
+                    bgColor="transparent"
+                    fgColor="white"
+                    className="hover:text-red-400 animate-bounce"
+                  />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80 ">
