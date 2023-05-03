@@ -13,15 +13,15 @@ export default function Home() {
             <Sidebar />
           </div>
           <div className="flex flex-col items-center md:items-start mt-5 md:mt-0 ">
-            <div className="text-2xl md:text-4xl font-extrabold text-center md:text-left ">
-              <p className="text-4xl mb-2 md:mb-0">
+            <div className="text-2xl md:text-4xl font-extrabold flex flex-col items-center md:items-start text-center md:text-left  ">
+              <p className="text-4xl mb-2 md:mb-0 text-center md:text-left">
                 Hi, I am <span className="text-red-400">Partab!</span>
               </p>
-              <p className="font-light">
+              <p className="font-light text-center md:text-left">
                 I am developer, loves to solve problems
               </p>
               <Link href="/contact">
-                <button className="mt-5 flex items-center space-x-2 py-2  px-4 self-end  bg-white hover:bg-[#2A2C39] hover:text-white text-gray-800   border border-gray-400 rounded-lg shadow font-bold text-sm">
+                <button className=" my-5 flex items-center space-x-2 py-2  px-4 self-end  bg-white hover:bg-[#2A2C39] hover:text-white text-gray-800   border border-gray-400 rounded-lg shadow font-bold text-sm animate-pulse">
                   <ChatAltIcon className="h-10 w-8 md:h-14 md:w-10 hover:animate-spin " />
                   <p>Connect Me..</p>
                 </button>
@@ -33,14 +33,16 @@ export default function Home() {
           <div className="block md:hidden  ">
             <Sidebar />
           </div>
-          <div className=" flex justify-center items-center mt-6  ">
-            <Image
-              layout="responsive"
-              src="/partabaibackk.png"
-              alt=""
-              width={640}
-              height={747}
-            />
+          <div className=" relative flex justify-center items-center mt-6  ">
+            <div className=" relative  ">
+              <Image
+                layout="intrinsic"
+                src="/partabaibackk.png"
+                alt=""
+                width={200}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>

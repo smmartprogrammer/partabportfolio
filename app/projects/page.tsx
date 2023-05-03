@@ -35,8 +35,8 @@ const projects = (props: Props) => {
           id: 4,
           name: 'Todo App',
           description: 'a small todo app, has been created, where major emphasis has been given towards functionality, like it should perform CRUD operation thats all it.',
-          imageSrc: '/todoappUI.png',
-          URL:"https://goldpricewithnewchanges.vercel.app/",
+          imageSrc: '/todoapp.png',
+          URL:"https://todoapptailwind.vercel.app/",
         },
 
 
