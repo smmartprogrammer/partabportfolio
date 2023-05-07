@@ -23,7 +23,7 @@ export default function Home() {
               <Link href="/contact">
                 <button className=" my-5 flex items-center space-x-2 py-2  px-4 self-end  bg-white hover:bg-[#2A2C39] hover:text-white text-gray-800   border border-gray-400 rounded-lg shadow font-bold text-sm animate-pulse">
                   <ChatAltIcon className="h-10 w-8 md:h-14 md:w-10 hover:animate-spin " />
-                  <p>Connect Me..</p>
+                  <p>Connect Me...</p>
                 </button>
               </Link>
             </div>
