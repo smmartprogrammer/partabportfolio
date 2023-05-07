@@ -28,10 +28,10 @@ const Contact = () => {
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
               <p className="pt-2 text-cyan-100 text-sm">
-                Let's work together! Contact me today to discuss your project.{" "}
+                Let`&apos;`s work together! Contact me today to discuss your project.{" "}
                 <br />
-                "I pride myself on delivering high-quality work and exceptional
-                service - let me prove it to you."
+                `&quot;`I pride myself on delivering high-quality work and exceptional
+                service - let me prove it to you.`&quot;`
               </p>
             </div>
             <div className="flex flex-col space-y-6">
@@ -102,7 +102,7 @@ const Contact = () => {
               className="flex flex-col space-y-4"
             >
               <div>
-                <label for="" className="text-sm font-bold">
+                <label  className="text-sm font-bold">
                   Your Name
                 </label>
                 <input
@@ -112,7 +112,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label for="" className="text-sm font-bold">
+                <label  className="text-sm font-bold">
                   Your Email Address
                 </label>
                 <input
@@ -122,7 +122,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label for="" className="text-sm font-bold">
+                <label  className="text-sm font-bold">
                   Message
                 </label>
                 <textarea
