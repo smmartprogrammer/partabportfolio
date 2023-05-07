@@ -37,13 +37,13 @@ const AboutMe = (props: Props) => {
               About Me
             </h1>
             <p className="mt-4">
-              I `&APOS`m the experienced web developers who specialize in creating custom web applications using Next.js and Tailwind CSS.
+              I am the experienced web developers who specialize in creating custom web applications using Next.js and Tailwind CSS.
             </p>
             <p className="mt-4">
-              I belive in delivering high-quality websites that exceed client`&APOS`s expectations. I take pride in my attention to detail and commitment to delivering projects on time and within budget.
+              I belive in delivering high-quality websites that exceed clients expectations. I take pride in my attention to detail and commitment to delivering projects on time and within budget.
             </p>
             <p className="mt-4">
-              At my core, I believe that a successful website requires more than just technical expertise. That`&APOS`s why I prioritize user experience in all of my projects. I strive to create websites that are intuitive, easy to navigate, and visually appealing.
+              At my core, I believe that a successful website requires more than just technical expertise. Thats why I prioritize user experience in all of my projects. I strive to create websites that are intuitive, easy to navigate, and visually appealing.
             </p>
           </div>
         </motion.div>

@@ -6,6 +6,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
+
+
 const Contact = () => {
   const message = encodeURIComponent(
     "Hello! I came across your portfolio website and would like to discuss a project. Are you available to chat?"
@@ -18,7 +20,7 @@ const Contact = () => {
   const body = encodeURIComponent(
     "Hello, I came across your portfolio website and would like to discuss a project. Are you available to chat?"
   ); // Replace with your desired email body
-  const href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  const href:string = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
   return (
     <div className="antialiased bg-[#2A2C39] ">
@@ -28,10 +30,10 @@ const Contact = () => {
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
               <p className="pt-2 text-cyan-100 text-sm">
-                Let`&apos;`s work together! Contact me today to discuss your project.{" "}
+                Lets work together! Contact me today to discuss your project.{" "}
                 <br />
-                `&quot;`I pride myself on delivering high-quality work and exceptional
-                service - let me prove it to you.`&quot;`
+                I pride myself on delivering high-quality work and exceptional
+                service - let me prove it to you.
               </p>
             </div>
             <div className="flex flex-col space-y-6">
