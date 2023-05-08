@@ -6,7 +6,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
-
+interface span {
+  action: string;
+}
 
 const Contact = () => {
   const message = encodeURIComponent(
@@ -49,7 +51,7 @@ const Contact = () => {
                 <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow">
                   {" "}
                   <Mail size={18} className="hover:animate-spin" />
-                  <span action="mailto:partabrajp@gmail.com">
+                  <span>
                     partabrajp@gmail.com
                   </span>
                   <div
