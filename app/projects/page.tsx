@@ -11,7 +11,7 @@ const projects = (props: Props) => {
           id: 1,
           name: 'Pricing UI',
           description: 'a simple page displaying UI, of the Pricing Page of Product this has been created using nextjs, tailwind, design has been taken from figma, this is responsive design ',
-          imageSrc: '/pricingUi.png',
+          imageSrc: '/pricingUi.jpg',
           URL:"https://pricing-ui-tailwing.vercel.app//",
           
         },
