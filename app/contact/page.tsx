@@ -1,10 +1,9 @@
 import { SocialIcon } from "react-social-icons";
-import { Mail, MapPin, MessageSquare } from "react-feather";
+import { Mail } from "react-feather";
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 
 interface span {
   action: string;
@@ -51,9 +50,10 @@ const Contact = () => {
                 <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-white text-black hover:bg-[#2A2C39] hover:text-white border  hover:border-white  shadow">
                   {" "}
                   <Mail size={18} className="hover:animate-spin" />
-                  <span>
+                  <form action="mailto:partabrajp@gmail.com" className="cursor-pointer">
                     partabrajp@gmail.com
-                  </span>
+                   
+                  </form>
                   {/* <a
                     href={`${href}`}
                     // className="flex items-center space-x-2 py-2 px-4 rounded-md bg-red-500 text-white hover:bg-red-600"
