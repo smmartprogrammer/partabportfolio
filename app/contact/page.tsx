@@ -61,10 +61,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                {/* <div className="flex items-center space-x-2 py-2 px-4 rounded-md bg-green-500  text-white hover:bg-green-600">
-                  <MapPin size={18}/>
-                  <span>Garden West, Karachi, Pakistan</span>
-                </div> */}
+                
                 <Link
                   href={`https://www.google.com/maps/search/?api=1&query=${address}&zoom=${zoomLevel}`}
                 >
@@ -107,7 +104,7 @@ const Contact = () => {
             >
               <div>
                 <label  className="text-sm font-bold">
-                  Your Name
+                  Your Name!
                 </label>
                 <input
                   type="text"
