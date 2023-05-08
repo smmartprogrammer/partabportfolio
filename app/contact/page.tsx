@@ -22,7 +22,7 @@ const Contact = () => {
   const body = encodeURIComponent(
     "Hello, I came across your portfolio website and would like to discuss a project. Are you available to chat?"
   ); // Replace with your desired email body
-  const href:string = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  // const href:string = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
   return (
     <div className="antialiased bg-[#2A2C39] ">
