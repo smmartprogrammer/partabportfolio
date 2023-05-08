@@ -54,10 +54,10 @@ const Contact = () => {
                   <span>
                     partabrajp@gmail.com
                   </span>
-                  <div
+                  <a
                     href={`${href}`}
                     // className="flex items-center space-x-2 py-2 px-4 rounded-md bg-red-500 text-white hover:bg-red-600"
-                  ></div>
+                  ></a>
                 </div>
               </div>
               <div className="inline-flex space-x-2 items-center">
